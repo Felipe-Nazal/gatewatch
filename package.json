@@ -1,0 +1,19 @@
+{
+  "name": "gatewatch",
+  "version": "1.0.0",
+  "description": "Real-time gateway monitor — VPN tunnels, NAT routing rules, active connections & traffic",
+  "main": "index.js",
+  "bin": {
+    "gatewatch": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}
