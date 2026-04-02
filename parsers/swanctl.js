@@ -232,7 +232,7 @@ function parseSas(output) {
  */
 async function fetchTunnels() {
   try {
-    const { stdout } = await execAsync('swanctl --list-sas', { timeout: 10000 });
+    const { stdout } = await execAsync('sudo swanctl --list-sas', { timeout: 10000 });
     return parseSas(stdout);
   } catch (err) {
     if (err.code === 'ENOENT' || (err.message && err.message.indexOf('not found') !== -1)) {
